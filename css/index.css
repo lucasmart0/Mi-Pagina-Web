@@ -1,0 +1,418 @@
+
+html, body{
+    width:100%; 
+    height:100%; 
+    padding:0px; 
+    margin:0px;
+
+    background: #556366; /* Old browsers */
+    background: -moz-linear-gradient(0deg,  #46595e 50%, #283139 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%,#191d1e), color-stop(100%,#283139)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(0deg,  #191d1e 50%,#283139 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(0deg,  #191d1e 50%,#0a0c0e 100%); /* IE10+ */
+    background: linear-gradient(0deg,  #4c4d4d 50%,#bdbdbd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background-attachment: fixed
+  }
+  
+/*<------------------------------------------------------------------------>*/
+
+
+/*ALTO*/
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+body {
+    background-color: white;
+}
+
+header img {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 85px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 14vh;
+    padding: 5px 0px;
+    margin:0;
+    border-radius: 25px;
+    position: sticky;
+    top: 0;
+
+}
+
+header nav ul {
+    display: flex;
+    text-align: center;
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 35px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+header div img {
+    transition:  0.6s;
+    height: 65px;
+    padding: 8px;
+    padding-left: 15px;
+}
+
+header div:hover > img {
+    transform: rotate(360deg);
+    height: 65px;
+    
+
+
+}
+
+header nav ul li {
+    transition: all .3s;
+}
+
+header nav ul li:hover {
+    color: aliceblue;
+    transform: scale(1.2);
+    text-shadow: 2px 12px 15px aliceblue;
+}
+
+
+
+.mural {
+    display: flex;
+    justify-content: center;
+    transform: scale(0.97);
+    border-radius: 5px;
+    transition: all .6s;    
+}
+
+.mural:hover {
+    transform: scale(0.979);
+
+}
+
+/*.mural {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hola {
+    display:inline;
+    background-color:white ;
+    text-align: center;
+    align-content: center;
+    padding:90px;
+    padding-right:90px ;
+    margin-left: 80px;
+    margin-top: 120px;
+    font-size: 60px;
+    transition: all .6s;
+}
+
+.hola:hover {
+    transform: scale(1.);
+    text-shadow: 2px 12px 7px #000;
+}
+
+.h3hola {
+    display:inline;
+    background-color:white ;
+    text-align: center;
+    align-content: center;
+    padding:150px;
+    padding-right:150px ;
+    margin-left: 80px;
+    font-size: 30px;
+    transition: all .6s;
+}
+
+.h3hola:hover {
+    transform: scale(1.);
+    text-shadow: 2px 12px 7px #000;
+}
+*/
+
+.hola {
+    font-size: 5rem;
+    font-weight: 50;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 11.5rem;
+    position: absolute;
+    text-shadow: 2px 22px 20px black;
+    transition: all .6s;
+    
+}
+
+.hola:hover {
+    transform: scale(1.0);
+    text-shadow: 2px 22px 20px black;
+
+    
+}
+
+
+.h3hola {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 5px;
+    transition: all .6s;
+    padding-bottom: 80px;
+    text-shadow: 2px 22px 20px black;
+}
+
+.h3hola:hover {
+    transform: scale(1.);
+    text-shadow: 22px 22px 15px black;
+}
+
+.sobreMi {
+    width: 50%;
+    text-align: center;
+    transition: all .6s;
+    border-radius: 40px;
+    margin: 80px 0px;
+    box-shadow: 0px 0px 100px 10px rgb(61, 61, 61);
+    transition: all .6s;
+}
+
+.sobreMi:hover {
+box-shadow: none;
+}
+
+
+
+.h2s {
+    color: white;
+    display: block;
+    font-size: 3rem;
+    padding-top: 1vh;
+    transition: all .6s;
+    margin-bottom: 1rem;
+
+} 
+
+.h2s:hover {
+    transform: scale(1.01);
+    text-shadow: 0px 0px 20px rgb(214, 214, 214);
+
+}
+
+.ps {
+    color: white;
+    font-size: 30px;
+    margin-top: 0%;
+    padding: 0 2vw 2vh 2vh;
+    transition: all .6s;
+    padding: 0px 50px;
+}
+
+.ps:hover {
+    transform: scale(1.01);
+    text-shadow: 2px 8px 20px black;
+
+}
+
+
+.divmedio {
+    display: flex;
+    justify-content: space-evenly;
+    /*background-color: #242525;*/
+    margin: 4rem 5rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 40px black;
+    transition: all .6s;
+}
+
+.divmedio:hover {
+    box-shadow: none;
+
+
+}
+
+
+.perfil {
+    display: block;
+    max-width: 20vw;
+    border-radius: 200px;
+    transform: scale(1.05);
+    box-shadow: 2px 2px 40px black;
+    transition: all .3s;
+
+}
+
+.perfil:hover {
+    transform: scale(1.06);
+    box-shadow: 2px 2px 40px black;
+
+}
+
+.secimg {
+    padding-top: 10rem;
+}
+
+.conocimientos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px;
+}
+
+.h2co {
+    display: block;
+    text-align: center;
+}
+
+/*
+.icohtml {
+    width: 170px;
+    height: 170px;
+    transition: all .6s;
+}
+
+.icocss {
+    width: 170px;
+    height: 170px;
+    transition: all .6s;
+}
+
+.icobs {
+    width: 170px;
+    height: 170px;
+    transition: all .6s;
+}
+
+.icojs {
+    height: 170px;
+    width: 170px;
+    border-radius: 15px;
+    transition: all .6s;
+}
+
+.icogit {
+    height: 170px;
+    width: 170px;
+    transition: all .6s;
+}
+.icogith {
+    height: 170px;
+    width: 170px;
+    transition: all .6s;
+}
+.icojava {
+    height: 170px;
+    width: 170px;
+    transition: all .6s;
+}
+
+.icohtml:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.icocss:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icobs:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icogit:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icogith:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icojs:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.icojava:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+*/
+
+.ico {
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+    transition: all .6s;
+}
+.ico:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+
+   
+   /* remove canvas default margin */
+   canvas{
+     display:block;
+     vertical-align:bottom;
+   }
+   
+   #particles-js{
+     width:100%;
+     height:100%;
+   }
+
+   .secest {
+    border-radius: 40px;
+    border-color: antiquewhite;
+    transition: all .5s;
+    box-shadow: 2px 2px 40px black;
+    margin: 4rem 5rem;
+    padding: 5rem;
+
+
+   }
+
+   .secest:hover {
+    box-shadow: none;
+
+
+}
+
+.h2es {
+    text-align: center;
+}
+
+.divh3es {
+    display:flex ;
+    justify-content: space-around;
+}
+
+.h3es {
+    padding-top: 1.5rem;
+    color: white;
+}
+
+.p-es {
+    width: 30rem;
+    color: white;
+}
