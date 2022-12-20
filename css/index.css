@@ -1,9 +1,5 @@
 
 html, body{
-    width:100%; 
-    height:100%; 
-    padding:0px; 
-    margin:0px;
 
     background: #556366; /* Old browsers */
     background: -moz-linear-gradient(0deg,  #46595e 50%, #283139 100%); /* FF3.6+ */
@@ -13,7 +9,7 @@ html, body{
     background: -ms-linear-gradient(0deg,  #191d1e 50%,#0a0c0e 100%); /* IE10+ */
     background: linear-gradient(0deg,  #4c4d4d 50%,#bdbdbd 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191d1e', endColorstr='#283139',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    background-attachment: fixed
+    background-attachment: fixed;
   }
   
 /*<------------------------------------------------------------------------>*/
@@ -49,13 +45,14 @@ header {
     justify-content: space-evenly;
     align-items: center;
     height: 14vh;
-    padding: 5px 0px;
     margin:0;
-    border-radius: 25px;
+    border-radius: 2px;
     position: sticky;
     top: 0;
-
+    background-color: rgba(128, 128, 128, 0.607);
+    z-index: 90;
 }
+
 
 header nav ul {
     display: flex;
@@ -187,7 +184,30 @@ header nav ul li:hover {
     text-shadow: 22px 22px 15px black;
 }
 
+#sec_sobremi, #sec_batero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#sec_batero{
+    display: block;
+    align-items: center;
+}
+
+.sobreMiBater {
+    display: block;
+    width: 75%;
+    align-content: center;
+    transition: all .6s;
+    border-radius: 40px;
+    margin: 80px 0px;
+    box-shadow: 0px 0px 100px 10px rgb(61, 61, 61);
+    transition: all .6s;
+}
+
 .sobreMi {
+    display: inline;
     width: 50%;
     text-align: center;
     transition: all .6s;
@@ -236,7 +256,7 @@ box-shadow: none;
 
 
 .divmedio {
-    display: flex;
+    /* display: flex; */
     justify-content: space-evenly;
     /*background-color: #242525;*/
     margin: 4rem 5rem;
@@ -269,7 +289,8 @@ box-shadow: none;
 }
 
 .secimg {
-    padding-top: 10rem;
+    display: flex;
+    justify-content: space-around;
 }
 
 .conocimientos {
@@ -366,6 +387,7 @@ box-shadow: none;
 .ico:hover {
     box-shadow:rgb(0, 0, 0);
     transform: scale(1.1);
+    transition: all .6s;
 }
 
 
@@ -405,10 +427,10 @@ box-shadow: none;
 .divh3es {
     display:flex ;
     justify-content: space-around;
+    align-items: center;
 }
 
 .h3es {
-    padding-top: 1.5rem;
     color: white;
 }
 
@@ -416,3 +438,47 @@ box-shadow: none;
     width: 30rem;
     color: white;
 }
+
+.DivBater {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.DivP {
+}
+
+.ImgBater {
+    width: 15rem;
+    border-radius:20px ;
+    margin-bottom: 80px;
+    transition: all .6s;
+}
+
+.ImgBater:hover {
+    box-shadow:rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+
+.sec_batero-p {
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+}
+
+.imgYp {
+    display: block;
+    justify-content: center;
+    margin: 5rem;
+    border-radius: 40px;
+    box-shadow: 2px 2px 40px black;
+    transition: all .6s;
+}
+
+.imgYp:hover {
+    box-shadow: none
+}
+
+
